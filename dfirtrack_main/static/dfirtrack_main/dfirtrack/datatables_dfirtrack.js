@@ -73,6 +73,11 @@ $(document).ready( function () {
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
         "order": [[ 2, "des" ]]
     } );
+    $('#table_tag').DataTable( {
+        "pageLength": 25,
+        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        "order": [[ 0, "asc" ]]
+    } );
     $('#table_task').DataTable( {
         "pageLength": 15,
         "lengthMenu": [[15, 25, 50, -1], [15, 25, 50, "All"]],
