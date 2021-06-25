@@ -504,6 +504,7 @@ class TagSerializer(serializers.ModelSerializer):
         fields = (
             'tag_id',
             'tag_name',
+            'tag_note',
             'tagcolor',
         )
 
