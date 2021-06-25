@@ -492,10 +492,11 @@ class SystemuserSerializer(serializers.ModelSerializer):
 class TagSerializer(serializers.ModelSerializer):
     """ create serializer for model instance """
 
+    #TODO: Testing Sven: Check if this is the problem with golang client!
     # get serializers of foreignkey relationsships
-    def to_representation(self, instance):
-        self.fields['tagcolor'] =  dfirtrack_main_fk.TagcolorFkSerializer(read_only=True)
-        return super(TagSerializer, self).to_representation(instance)
+    # def to_representation(self, instance):
+        # self.fields['tagcolor'] =  dfirtrack_main_fk.TagcolorFkSerializer(read_only=True)
+        # return super(TagSerializer, self).to_representation(instance)
 
     class Meta:
         model = dfirtrack_main_models.Tag
